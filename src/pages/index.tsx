@@ -26,18 +26,18 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
-      <main>
-        <section className='bg-white'>
-          <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
+      <main className='h-full w-full'>
+        <section className='h-full w-full'>
+          <div className='layout relative flex min-h-full flex-col items-center justify-center py-12 text-center'>
             <Vercel className='text-5xl' />
             <h1 className='mt-4'>
               Next.js + Tailwind CSS + TypeScript Starter
             </h1>
-            <p className='mt-2 text-sm text-gray-800'>
+            <p className='mt-2 text-sm text-gray-800 dark:text-slate-100'>
               A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
               Import, Seo, Link component, pre-configured with Husky{' '}
             </p>
-            <p className='mt-2 text-sm text-gray-700'>
+            <p className='mt-2 text-sm text-gray-700 dark:text-slate-200'>
               <ArrowLink href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter'>
                 See the repository
               </ArrowLink>
@@ -60,7 +60,7 @@ export default function HomePage() {
               />
             </UnstyledLink>
 
-            <footer className='absolute bottom-2 text-gray-700'>
+            <footer className='absolute bottom-2 text-gray-700 dark:text-slate-200'>
               © {new Date().getFullYear()} By{' '}
               <UnderlineLink href='https://theodorusclarence.com?ref=tsnextstarter'>
                 Theodorus Clarence
